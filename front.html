@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Front_ws</title>
-    <script src="main.js"></script>
+    <script async defer src="main.js"></script>
 </head>
 <body>
+<header>
+    <h1>My Notes</h1>
+</header>
+<div>
+    <aside>
+        <ul>
+            <li>home</li>
+            <li>pinned</li>
+            <li><a target="_blank" href="">help</a></li>
+        </ul>
+    </aside>
 
+    <form>
+        <label for="noteTitle">
+            title
+            <input id="noteTitle" name="noteTitle"/>
+        </label>
+
+        <label for="noteText">
+            text
+            <input id="noteText" name="noteText"/>
+        </label>
+
+        <button>create</button>
+
+    </form>
+
+    <button id="myBtn">hi</button>
+
+    <main id='notes'>
+    </main>
+</div>
 </body>
 </html>

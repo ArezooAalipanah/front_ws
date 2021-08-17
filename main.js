@@ -39,7 +39,7 @@ const allNotes =[
             updated: '',
         }
 
-    },
+    }
 ];
 
 
@@ -60,18 +60,44 @@ function creatNote(title, text) {
     allNotes.push(note);
 }
 
-function editNote(id, title, text, color){
-    const note=findById(id);
-    })
-
-    return note;
-}
-
 function getId() {
     return (Math.random()*10e10).toFixed(0)
 }
 
 function findById(id){
-    allNotes.find(function (item) {
-        return item.id===id
-    }}
+    return allNotes.find((item) => (item.id===id));
+}
+
+//const notesElement = document.getElementById("notes")
+//const myDiv = document.createElement("div")
+//myDiv.innerText = 'Salam'
+//notesElement.append(myDiv)
+
+function renderAllNotes(){
+    const parent=document.getElementById("notes");
+
+    for (let i=0; i<allNotes.length; i+=1){
+        parent.append(renderNote(allNotes[i]))
+    }
+}
+
+function renderNote(note) {
+    const noteElement = document.createElement('div');
+    const  innerHTML = `<h2>${note.title}</h2>
+                            <p>${note.text}</p>`
+
+    noteElement.innerHTML = innerHTML;
+    return noteElement;
+
+}
+
+renderAllNotes();
+
+const myBtn= document.getElementById('myBtn')
+
+myBtn.addEventListener("click", changeText)
+
+function changeText(){
+    myBtn.innerText="salam"
+    alert("you clicked me:)")
+}
