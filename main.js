@@ -75,6 +75,7 @@ function findById(id){
 
 function renderAllNotes(){
     const parent=document.getElementById("notes");
+    parent.innerHTML='';
 
     for (let i=0; i<allNotes.length; i+=1){
         parent.append(renderNote(allNotes[i]))
@@ -93,11 +94,25 @@ function renderNote(note) {
 
 renderAllNotes();
 
-const myBtn= document.getElementById('myBtn')
+const noteForm= document.getElementById("noteForm");
 
-myBtn.addEventListener("click", changeText)
+noteForm.addEventListener("submit",handleSubmit);
 
-function changeText(){
-    myBtn.innerText="salam"
-    alert("you clicked me:)")
+function handleSubmit(e){
+    e.preventDefault();
+    const title = document.getElementById('noteTitle').value
+    const text = document.getElementById('noteText').value
+
+    creatNote(title,text)
+    renderAllNotes()
+
 }
+
+
+//const myBtn= document.getElementById('myBtn')
+//myBtn.addEventListener("click", changeText)
+//function changeText(){
+//    myBtn.innerText="salam"
+//    alert("you clicked me:)") }
+
+

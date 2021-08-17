@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Front_ws</title>
     <script async defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -18,7 +19,7 @@
         </ul>
     </aside>
 
-    <form>
+    <form id="noteForm">
         <label for="noteTitle">
             title
             <input id="noteTitle" name="noteTitle"/>
@@ -29,11 +30,12 @@
             <input id="noteText" name="noteText"/>
         </label>
 
-        <button>create</button>
+        <button type="submit">create</button>
+        <button type="reset">reset</button>
 
     </form>
 
-    <button id="myBtn">hi</button>
+    <!--button id="myBtn">hi</button-->
 
     <main id='notes'>
     </main>
