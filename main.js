@@ -39,6 +39,75 @@ const allNotes =[
             updated: '',
         }
 
+    },
+    {
+        id: 4,
+        title: 'title 3',
+        text: 'text 3',
+        color: 'pink',
+        idPinned: false,
+        isDeleted: false,
+        timestamp: {
+            created: '',
+            updated: '',
+        }
+
+    },
+
+    {
+        id: 4,
+        title: 'title 3',
+        text: 'text 3',
+        color: 'pink',
+        idPinned: false,
+        isDeleted: false,
+        timestamp: {
+            created: '',
+            updated: '',
+        }
+
+    },
+
+    {
+        id: 4,
+        title: 'title 3',
+        text: 'text 3',
+        color: 'pink',
+        idPinned: false,
+        isDeleted: false,
+        timestamp: {
+            created: '',
+            updated: '',
+        }
+
+    },
+
+    {
+        id: 4,
+        title: 'title 3',
+        text: 'text 3',
+        color: 'pink',
+        idPinned: false,
+        isDeleted: false,
+        timestamp: {
+            created: '',
+            updated: '',
+        }
+
+    },
+
+    {
+        id: 5,
+        title: 'title 3',
+        text: 'text 3',
+        color: 'pink',
+        idPinned: false,
+        isDeleted: false,
+        timestamp: {
+            created: '',
+            updated: '',
+        }
+
     }
 ];
 

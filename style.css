@@ -1,20 +1,47 @@
 html {
-    background-color: red;
+    font-family: Serif0;
 }
 body{
     margin: 0;
 }
-header {
+/*header {
     width: 100%;
     height: 80px;
     background-color: white;
     border-bottom: 8px solid black;
     padding: 20px 20px 0 20px;
-    /*position: fixed;*/
+    /*position: fixed;
     margin: 10px;
     box-sizing: border-box;
 
-}
+}*/
 header h1 {
     margin: 0;
+}
+
+.header {
+    background-color: white;
+    padding: 0 16px;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    top: 0;
+}
+.sidebar{
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 80px;
+    width: 300px;
+}
+
+.main{
+    padding: 16px;
+}
+.grapper{
+    margin-left: 300px;
+    margin-top: 85px;
+
 }
