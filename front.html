@@ -5,23 +5,39 @@
     <meta charset="UTF-8">
     <title>Front_ws</title>
     <script async defer src="main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="collapse-sidebar">
 <header class="header">
-    <h1>My Notes</h1>
+    <button class="btn">
+        <i class="bi bi-list"></i>
+    </button>
+    <h1>
+        My Notes
+    </h1>
 </header>
 <div class="grapper">
     <aside class="sidebar">
         <ul class="menu">
             <li class="menu__item">
-                <a class="menu__link menu__link--active" href="">home</a>
+                <a class="menu__link menu__link--active" href="">
+                    <i class="bi-house-fill"></i>
+                    home
+                </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="">pinned</a>
+                <a class="menu__link" href="">
+                    <i class="bi bi-pin-fill"></i>
+                    pinned
+                </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">help</a>
+                <a class="menu__link" href="#">
+                    <i class="bi-info-circle-fill"></i>
+                    help
+                </a>
+
             </li>
         </ul>
     </aside>

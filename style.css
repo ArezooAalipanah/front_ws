@@ -36,6 +36,10 @@ header h1 {
     top: 80px;
     width: 300px;
 }
+.collapse-sidebar .sidebar{
+    width: 50px;
+
+}
 
 .main{
     padding: 16px;
@@ -53,7 +57,7 @@ header h1 {
 }
 
 .menu__link{
-    display: block;
+    display: flex;
 
     padding: 16px;
     color: #000000;
@@ -62,6 +66,7 @@ header h1 {
     border-radius: 0 50px 50px 0;
     outline: none;
     text-transform: capitalize;
+    overflow: hidden;
 }
 
 .menu__link:hover{
@@ -73,6 +78,10 @@ header h1 {
 }
 .menu__item .menu__link.menu__link--active{
     background-color: #ffd680;
+}
+
+.menu__link>i{
+    margin-right: 20px;
 }
 
 .notes{
