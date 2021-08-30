@@ -25,19 +25,24 @@
         </ul>
     </aside>
 
-    <form id="noteForm">
-        <label for="noteTitle">
-            title
-            <input id="noteTitle" name="noteTitle"/>
-        </label>
+    <form id="noteForm" class="note_form">
+        <p>
+            <label class="form__label" for="noteTitle">
+                title
+            </label>
+            <input class="form__input" id="noteTitle" name="noteTitle"/>
+        </p>
 
-        <label for="noteText">
-            text
-            <input id="noteText" name="noteText"/>
-        </label>
+        <p>
+            <label class="form__label" for="noteText">
+                text
+            </label>
+            <input class="form__input" id="noteText" name="noteText"/>
+        </p>
 
-        <button type="submit">create</button>
-        <button type="reset">reset</button>
+
+        <button class="btn" type="submit">create</button>
+        <button class="btn" type="reset">reset</button>
 
     </form>
 
