@@ -37,6 +37,8 @@ header h1 {
     bottom: 0;
     top: 80px;
     width: 300px;
+
+    transition: width ease-in-out 0.3s;
 }
 .collapse-sidebar .sidebar{
     width: 50px;
@@ -49,6 +51,7 @@ header h1 {
 .grapper{
     margin-left: 300px;
     margin-top: 85px;
+    transition: margin-left ease-in-out 0.3s;
 
 }
 
@@ -119,7 +122,7 @@ header h1 {
 }
 
 .note_form{
-    width: 50%;
+    width: 95%;
     margin: auto;
 
 }
@@ -207,6 +210,9 @@ header h1 {
 @media (min-width: 768px) {
     .card{
         flex-basis: calc(33% - 10px);
+    }
+    .note_form {
+        width: 50%;
     }
 }
 @media (min-width: 992px) {

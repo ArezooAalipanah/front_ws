@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body class="collapse-sidebar">
+<body >
 <header class="header">
     <button id="menu_btn" class="btn btn--icon">
         <i class="bi bi-list"></i>
@@ -44,32 +44,34 @@
             </li>
         </ul>
     </aside>
+    <div class="main">
+        <form id="noteForm" class="note_form">
+            <p>
+                <label class="form__label" for="noteTitle">
+                    title
+                </label>
+                <input class="form__input" id="noteTitle" name="noteTitle"/>
+            </p>
 
-    <form id="noteForm" class="note_form">
-        <p>
-            <label class="form__label" for="noteTitle">
-                title
-            </label>
-            <input class="form__input" id="noteTitle" name="noteTitle"/>
-        </p>
-
-        <p>
-            <label class="form__label" for="noteText">
-                text
-            </label>
-            <input class="form__input" id="noteText" name="noteText"/>
-        </p>
+            <p>
+                <label class="form__label" for="noteText">
+                    text
+                </label>
+                <input class="form__input" id="noteText" name="noteText"/>
+            </p>
 
 
-        <button class="btn" type="submit">create</button>
-        <button class="btn" type="reset">reset</button>
+            <button class="btn" type="submit">create</button>
+            <button class="btn" type="reset">reset</button>
 
-    </form>
+        </form>
 
-    <!--button id="myBtn">hi</button-->
+        <!--button id="myBtn">hi</button-->
 
-    <main class="notes" id='notes'>
-    </main>
+        <main class="notes" id='notes'>
+        </main>
+    </div>
+    <script> </script>
 </div>
 </body>
 </html>
