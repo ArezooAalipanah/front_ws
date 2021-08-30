@@ -1,8 +1,12 @@
 html {
-    font-family: Serif0;
+    font-family: Serif;
 }
 body{
     margin: 0;
+}
+
+* {
+    box-sizing: border-box;
 }
 /*header {
     width: 100%;
@@ -22,13 +26,18 @@ header h1 {
 .header {
     display: flex;
     align-items: center;
-    background-color: white;
     column-gap: 16px;
     position: fixed;
     height: 80px;
     width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+    right: 0;
+    left: 0;
     top: 0;
+
+    z-index: 1;
+    background-color: white;
+    left: 0;
+
 }
 .sidebar{
 
@@ -38,10 +47,14 @@ header h1 {
     top: 80px;
     width: 300px;
 
+    background-color: white;
+    box-shadow: 1px 0 4px 2px rgba(0, 0, 0, 0.25);
+
     transition: width ease-in-out 0.3s;
 }
 .collapse-sidebar .sidebar{
     width: 50px;
+    box-shadow: none;
 
 }
 
@@ -49,10 +62,9 @@ header h1 {
     padding: 16px;
 }
 .grapper{
-    margin-left: 300px;
-    margin-top: 85px;
+    margin-left: 50px;
+    margin-top: 80px;
     transition: margin-left ease-in-out 0.3s;
-
 }
 
 .collapse-sidebar .grapper {
@@ -204,6 +216,12 @@ header h1 {
 @media (min-width: 576px) {
     .card{
         flex-basis: calc(50% - 8px);
+    }
+    .grapper{
+        margin-left: 300px;
+    }
+    .sidebar{
+        box-shadow: none;
     }
 }
 
