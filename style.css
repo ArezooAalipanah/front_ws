@@ -103,9 +103,16 @@ header h1 {
     padding: 8px;
 }
 
+.note_form{
+    width: 50%;
+    margin: auto;
+
+}
+
+
 .form__input{
     display: block;
-    width: 50%;
+    width: 100%;
     appearance: none;
     -webkit-appearance: none;
     border: none;
@@ -138,13 +145,16 @@ header h1 {
 
 }
 .btn:focus{
+    background-color: rgba(0,0,0,0.8);
 
 }
 
 .btn:hover{
+    background-color: rgba(0,0,0,0.7);
 
 }
 
 .btn:active{
-    
+    background-color: rgba(0,0,0,0.6);
+
 }
