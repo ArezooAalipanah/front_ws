@@ -153,8 +153,10 @@ function renderAllNotes(){
 
 function renderNote(note) {
     const noteElement = document.createElement('div');
-    const  innerHTML = `<h2>${note.title}</h2>
-                            <p>${note.text}</p>`
+
+    noteElement.classList.add('card')
+    const  innerHTML = `<h2 class="card__title">${note.title}</h2>
+                            <p class="card__text">${note.text}</p>`
 
     noteElement.innerHTML = innerHTML;
     return noteElement;

@@ -74,3 +74,14 @@ header h1 {
 .menu__item .menu__link.menu__link--active{
     background-color: #ffd680;
 }
+
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex-basis: 25%;
+    flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.3);
+}
